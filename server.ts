@@ -1,5 +1,6 @@
 import express from "express";
 import { createServer as createViteServer } from "vite";
+import app from "./api/index.js";
 
 async function startDev() {
   const vite = await createViteServer({
@@ -7,7 +8,6 @@ async function startDev() {
     appType: "spa",
   });
 
-  const { app } = await import("./api/index.js");
   app.use(vite.middlewares);
 
   const PORT = process.env.PORT || 3000;
