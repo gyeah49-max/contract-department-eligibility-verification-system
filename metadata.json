@@ -1,0 +1,6 @@
+{
+  "name": "Contract Department Eligibility Verification System",
+  "description": "Next.js/Node.js-based system for verifying eligibility of contract department applicants using server-side Gemini PDF analysis and OCR verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
